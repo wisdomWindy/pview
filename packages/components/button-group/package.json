@@ -3,20 +3,27 @@
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "yangjianlin <yangjianlin@123.com>",
-  "homepage": "",
+  "homepage": "https://github.com/wisdomWindy/pview#readme",
   "license": "ISC",
   "main": "src/index.ts",
   "directories": {
-    "lib": "src",
+    "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisdomWindy/pview.git"
+  },
   "scripts": {
-    "test": "node ./__tests__/buttonGroup.test.js"
+    "test": "node ./__tests__/@pview/button-group.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/wisdomWindy/pview/issues"
   }
 }

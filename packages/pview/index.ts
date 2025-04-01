@@ -1,14 +1,9 @@
 import type {App} from 'vue'
-import PButton from '@pview/button'
-import PIcon from '@pview/icon'
-const components = [
-  PButton,
-  PIcon
-]
+import * as components from './components'
 
 const install = (app:App)=>{
-  components.forEach(item => {
-    app.component(item.name!,item)
+  Object.keys(components).forEach(key => {
+    app.component(key,components[key])
   })
 }
 export default {

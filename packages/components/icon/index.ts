@@ -1,9 +1,9 @@
-import PIcon from './src/PIcon.vue'
+import Icon from './src/PIcon.vue'
 
-PIcon.name= 'PIcon'
+Icon.name= 'PIcon'
 
-PIcon.install = (app: any) => {
-  app.component(PIcon.name, PIcon)
+Icon.install = (app: any) => {
+  app.component(Icon.name, Icon)
 }
 
-export default PIcon
+export const PIcon = Icon

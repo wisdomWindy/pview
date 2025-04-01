@@ -1,11 +1,11 @@
-# `buttonGroup`
+# `@pview/button-group`
 
 > TODO: description
 
 ## Usage
 
 ```
-const buttonGroup = require('buttonGroup');
+const buttonGroup = require('@pview/button-group');
 
 // TODO: DEMONSTRATE API
 ```
