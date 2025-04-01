@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^8.0.0",
+    "typescript": "^5.8.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "vue": "^3.5.13",
+    "@pview/components":"workspace:*",
+    "@pview/theme-chalk":"workspace:*"
+  }
+}

@@ -1,0 +1,19 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '8.0.0',
+0 silly argv   '$0': 'D:\\pnpm\\global\\5\\node_modules\\lerna\\dist\\cli.js',
+0 silly argv   name: 'icon'
+0 silly argv }
+1 notice cli v8.0.0
+2 verbose packageConfigs Package manager "pnpm" detected. Resolving packages using `pnpm-workspace.yaml`.
+3 verbose rootPath D:\web\web_knowledge_system\extend\componentsSystem\pview
+4 error Error: Invalid package name "@pview": name can only contain URL-friendly characters
+4 error     at invalidPackageName (D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\npm-package-arg@8.1.1\node_modules\npm-package-arg\npa.js:89:15)
+4 error     at Result.setName (D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\npm-package-arg@8.1.1\node_modules\npm-package-arg\npa.js:124:11)
+4 error     at new Result (D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\npm-package-arg@8.1.1\node_modules\npm-package-arg\npa.js:114:23)
+4 error     at Function.resolve (D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\npm-package-arg@8.1.1\node_modules\npm-package-arg\npa.js:61:15)
+4 error     at D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\@lerna+create@8.0.0_typescript@5.8.2\node_modules\@lerna\create\dist\command.js:3213:62
+4 error     at Array.forEach (<anonymous>)
+4 error     at D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\@lerna+create@8.0.0_typescript@5.8.2\node_modules\@lerna\create\dist\command.js:3193:42
+4 error     at PackageGraph.forEach (<anonymous>)
+4 error     at new PackageGraph (D:\web\web_knowledge_system\extend\componentsSystem\pview\node_modules\.pnpm\@lerna+create@8.0.0_typescript@5.8.2\node_modules\@lerna\create\dist\command.js:3186:14)

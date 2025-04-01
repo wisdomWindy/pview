@@ -1,0 +1,22 @@
+{
+  "name": "@pview/button",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "yangjianlin <yangjianlin@123.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./index.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "node ./__tests__/button.test.js"
+  }
+}

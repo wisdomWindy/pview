@@ -1,0 +1,21 @@
+{
+  "name": "@pview/theme-chalk",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "yangjianlin <yangjianlin@123.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "node ./__tests__/icon.test.js"
+  }
+}
