@@ -1,5 +1,7 @@
 <template>
- <div class="pview-button-group"></div>
+ <div class="pview-button-group">
+  <slot></slot>
+ </div>
 </template>
 
 <script setup lang="ts">

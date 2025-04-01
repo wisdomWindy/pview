@@ -1,0 +1,16 @@
+@import './mixins/config.scss';
+@import './mixins/mixin.scss';
+@import './common/var.scss';
+
+@include b(col) {
+  @at-root{
+    @for $i from 0 through 24 {
+      &.#{$nameSpace}-col-span-#{$i} {
+        flex: (1 / 24 * $i * 100) * 1%;
+      }
+      &.#{$nameSpace}-col-offset-#{$i}{
+        margin-left: (1 / 24 * $i * 100) * 1%;
+      }
+    }
+  }
+}

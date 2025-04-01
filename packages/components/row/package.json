@@ -1,5 +1,5 @@
 {
-  "name": "@pview/button-group",
+  "name": "@pview/row",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "yangjianlin <yangjianlin@123.com>",
@@ -7,11 +7,11 @@
   "license": "ISC",
   "main": "index.ts",
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -21,7 +21,7 @@
     "url": "git+https://github.com/wisdomWindy/pview.git"
   },
   "scripts": {
-    "test": "node ./__tests__/@pview/button-group.test.js"
+    "test": "node ./__tests__/@pview/row.test.js"
   },
   "bugs": {
     "url": "https://github.com/wisdomWindy/pview/issues"

@@ -5,7 +5,7 @@
   "author": "yangjianlin <yangjianlin@123.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "./index.ts",
+  "main": "index.ts",
   "directories": {
     "lib": "src",
     "test": "__tests__"

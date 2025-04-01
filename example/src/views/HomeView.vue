@@ -8,6 +8,10 @@
     <PButton type="info" :round="true">round</PButton>
     <PButton type="info" :disabled="true">disabled</PButton>
     <PButton type="info" :plain="true">plain</PButton>
+    <PButtonGroup>
+      <PButton type="info" round :disabled="true">disabled</PButton>
+      <PButton type="info" round :plain="true">plain</PButton>
+    </PButtonGroup>
   </div>
 </template>
 

@@ -1,0 +1,8 @@
+@import './mixins/config.scss';
+@import './mixins/mixin.scss';
+@import './common/var.scss';
+
+@include b(row) {
+  display: flex;
+  flex-wrap:wrap;
+}
