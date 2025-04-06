@@ -1,0 +1,25 @@
+{
+  "name": "@pview/transfer",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "yangjianlin <yangjianlin@123.com>",
+  "homepage": "https://github.com/wisdomWindy/pview#readme",
+  "license": "ISC",
+  "main": "index.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisdomWindy/pview.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/transfer.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/wisdomWindy/pview/issues"
+  }
+}

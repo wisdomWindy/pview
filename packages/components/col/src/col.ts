@@ -1,4 +1,4 @@
-import {defineComponent,h,computed} from 'vue'
+import {defineComponent,h,computed,inject} from 'vue'
 
 export default defineComponent({
   name:'PCol',
@@ -20,6 +20,13 @@ export default defineComponent({
     return () => {
       const {tag} = props
       const {slots} = ctx
+      const gutter = inject('gutter',0)
+      const gutterStyle = computed(()=>{
+        return {
+          paddingLeft:gutter/2+'px',
+          paddingRight:gutter/2+'px'
+        }
+      })
       const className = computed(()=>{
         return [
           'pview-col',
@@ -30,7 +37,8 @@ export default defineComponent({
         ]
       });
       return h(tag,{
-        class:className.value
+        class:className.value,
+        style:gutterStyle.value,
       },slots.default?.())
     }
   }

@@ -1,0 +1,19 @@
+@import './mixins/config.scss';
+@import './mixins/mixins.scss';
+@import './common/var.scss';
+
+@include b(transfer){
+ 
+  @include e(item){
+    display: inline-block;
+    width:200px;
+    border:1px solid #ebeef5;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin:0 20px;
+  }
+
+  @include e(button){
+    display: inline-block;
+  }
+}

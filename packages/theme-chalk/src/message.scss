@@ -1,0 +1,35 @@
+@import './mixins/config.scss';
+@import './mixins/mixin.scss';
+
+@include b(message) {
+  position: fixed;
+  top:20px;
+  left:50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  @include m(info){
+    background-color: $--color-info;
+  }
+  @include m(success){
+    background-color: $--color-success;
+  }
+  @include m(warning){
+    background-color: $--color-warning;
+  }
+  @include m(error){
+    background-color: $--color-danger;
+  }
+  @include when(center){
+    justify-content: center;
+  }
+}
+.pview-message-fade-enter-from,
+.pview-message-fade-leave-to{
+  transform: translate(-50%, -100%);
+}
+
+.pvew-message-fade-enter-active,
+.pview-message-fade-leave-active{
+  transition:all .3s;
+}

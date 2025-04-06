@@ -1,4 +1,4 @@
-import { computed, defineComponent,h } from "vue";
+import { computed, defineComponent,h,provide } from "vue";
 export default defineComponent({
   name:'PRow',
   props:{
@@ -16,13 +16,22 @@ export default defineComponent({
     },
   },
   setup(props,ctx){
-      const {tag} = props
+    
+      const {tag,gutter} = props
       const {slots} = ctx
+      provide<Number>('gutter',gutter)
       const className = computed(()=>{
-        return `pview-row`
+        return [`pview-row`,`is-justify-${props.justify||'start'}`]
+      })
+      const gutterStyle = computed(()=>{
+        return {
+          marginLeft: `-${gutter}px`,
+          marginRight:`-${gutter}px`
+        }
       })
       return h(tag,{
         class:className.value,
+        style:gutterStyle.value,
       },slots.default?.())
   }
 })
